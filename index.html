@@ -1,228 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="vehicles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <meta charset="UTF-8">
-  </head> 
-  
+  <head>
+    <link rel="stylesheet" href="auth.css">
+  </head>
   <body>
-    <div class="general-popup">
-      <p>
-      Welcome to Adrenaline Racing!
-      <br>Thank you for playing and supporting this game! 
-      We would like to inform all players that this game is currently under 
-      development. 
-      </p>
-      <p>
-      Big changes are to be implemented in regards to look, feel,
-       interface, game functionality and future expansions. 
-      </p>
-     <p>
-      Therefore, we ask you kindly to bear with us as we develop this game
-       to the best version it can possibly be. 
-       We hope you will enjoy the ever expanding story, as well as growing stronger every day!
-      </p>
-      <p>
-       Many thanks, the Developers.
-      </p>
-      <div class="flexy">
-      <p class="closed not-show">x Do not show again</p>
-      <p class="closed snooze">x Snooze</p>
+    <div style="display: flex; justify-content: center;">
+    <form action="/signup"  method="post" class="form-div">
+      <h3>Manage Account</h3>
+      <div style="margin-top: 35px;">
+      <p>Username</p>
+      <input type="name">
+      <p>Email</p>
+      <input type="email">
+      <p>Password</p>
+      <input type="password">
+      <div class="reg-log">
+        <button><a href="./index.html">Register</a></button>
+        <button><a href="login.html">Log in</a></button>
+        <p class="forgot-password">Forgot password?</p>
       </div>
-    </div>
-    <div class="city-time">
-     <p>City Time</p>
-    <p><span class="hours">00</span> <span class="blinking-dot">:</span> <span class="minutes">00</span></p>
-    </div>
-    <div class="level-up-popup">
-      
- <svg id="purchase-shop" onclick="levelUpHide()" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
-      
-    <img src="girl-pic.png" class="girl-pic">
-    <p style="font-weight: bold;"> WOOHOO!!! </p>
-    <p>
-      You have leveled up! <br> You are now: Rookie Level (<span class="the-level"></span>)!
-     </p>
-     <p>
-       Word spreads! More racers want to challenge you! You gained:
-     </p> 
-     <p>
-      100 REPUTATION
-      </p>
-    <p>
-      1 NITRO
-      </p>
-      <p> <img src="in-game-cash.png" class="in-game-cash"> 2000</p>
-    </div>
- <header>
-   <div class="info-div">
-     <div class="img-div">
-      <img src="logo.jpg" class="logo-img">
-     </div>
-     <div class="buttons-info">
-      <p><img src="in-game-cash.png" class="mini-icon"> <br> 
-        Cash <br>
-     <span class="total-cash">0</span></p>
-       <p>
-         <img src="nitro.png" class="mini-icon"> <br>
-         Nitro <br>
-         <span class="total-nitro">0</span>
-       </p>
-      <p>
-         <img src="gang-coins.png" class="mini-icon"> <br>
-        Coins <br>
-         <span class="total-gcoins">0</span>
-       </p>
-      <p>
-         <img src="reputation.png" class="mini-icon"> <br>
-         
-         Rep <br>
-         <span class="total-rep">0</span>
-       </p>
-     </div>
-     <div class="fuel-info">
-       <img src="fuel.png" class="mini-icon fuel-icon"> <br>
-       Fuel <br>
-       <span class="total-fuel">10</span> / 10 <br>
-       <span>+1 / <span class="fuel-timer">4 : 00</span></span>
-     </div>
-   </div>
-   
-   <div class="exp-bar">
-    <div class="flexy">
-      <div class="level-bg">
-       <p> Level <br>
-       <span class="player-level">1</span>
-       </p>
       </div>
-      <div class="details-exp">
-        <p style="width: 80px;"><span class="level-title">Stranger</span></p>
-        <div>
-         <p><span>Experience:</span> <span class="total-exp">0</span></p>
-         <p><span>Next Level:</span> <span class="next-level">100</span></p>
-        </div>
-      </div>
+    </form>
     </div>
-     <div class="gridy">
-        <div>
-          <div class="level-bar-1 start-r">
-            <div class="exp-1 exp-exp"></div>
-          </div>
-          </div>
-        <div>
-          <div class="level-bar-1">
-            <div class="exp-2 exp-exp"></div>
-          </div>
-        </div>
-        <div> 
-         <div class="level-bar-1">
-            <div class="exp-3 exp-exp"></div>
-         </div>
-        </div>
-        <div>
-         <div class="level-bar-1">
-            <div class="exp-4 exp-exp"></div>
-         </div>
-        </div>
-        <div>
-         <div class="level-bar-1 end-r">
-            <div class="exp-5 exp-exp"></div>
-         </div>
-        </div>
-     </div>
-   </div>
-   <div class="three-dots">
-     <i class="fa fa-dots"></i>
-   </div>
- </header>
- 
- <nav class="nav-btns">
-   <button class="home" id="home">Home</button>
-   <button class="missions">Missions</button>
-   <button class="race">Race</button>
-   <button class="challenges">Challenges</button>
-   <button class="inventory">Inventory</button>
-   <button class="shop">Shop</button>
-   <button class="vehicles">Vehicles</button>
-   <button class="progress">Purchase</button>
-   <button class="practice">Skills</button>
-   <button class="gallery">Gallery</button>
- </nav>
- <div class="third-row">
- <button class="dropdown-btn db-1">+ more</button>
-<button class="dropdown-btn db-2">+ more</button>
- </div>
- <div class="third-row nav-btns a-s-div">
-   <button class="achievements">Achievements</button>
-   <button class="storyline">Storyline</button>
-   <button class="guidelines">Guidelines</button>
-   <button class="vip">Vip</button>
- </div>
- <section class="sec-dis home-page display">
-   <div class="home-pae"></div>
- </section>
- <section class="sec-dis display race-page">
-   <div class="race-pag"></div>
-   </section>
- <section class="sec-dis display challenges-page">
-   <div class="challengs-page"></div>
- </section>
- <section class="sec-dis display purchase-page">
-   <div class="purchase-pae"></div>
-   </section>
- <section class="sec-dis display shop-page">
-   <div class="shop-age"></div>
- </section>
- <section class="sec-dis display practice-page">
-   <div class="practic-page"></div>
-  </section>
- <section class="sec-dis display gallery-page">
-   <div class="gallery-pag"></div>
- </section>
- <section class="sec-dis display vehicle-page">
-   <div class="vehicle-pae"></div>
- </section>
- <section class="sec-dis display missions-page">
-   <div class="missions-pge"></div>
-   </section>
- <section class="sec-dis display inventory-page">
-   <div class="inventory-pae"></div>
-   </section>
- <section class="sec-dis display achieved-page">
-   <div class="achieved-pge"></div>
- </section>
- <section class="sec-dis display story-page">
-   <div class="story-pge"></div>
-   </section>
-    <section class="sec-dis display guidelines-page">
-   <div class="guidelines-pge"></div>
-   </section>
-       <section class="sec-dis display vip-page">
-   <div class="vip-pge"></div>
-   </section>
- </section>
- 
- <script src="all-html.js"></script>
- <script src="challenges.js"></script>
- <script src="inventory.js"></script> 
- <script src="missions.js"></script>
- <script src="crew.js"></script>
- <script src="vehicles.js"></script>
- <script src="script.js"></script>
- <script src="race.js"></script>
- <script src="fuel-timer.js"></script>
- <script src="shop.js"></script>
- <script src="purchase.js"></script>
- <script src="exp.js"></script>
- <script src="achievements.js"></script>
- <script src="storyline.js"></script>
- <script src="practice.js"></script>
- <script src="handle-buy.js"></script>
- </body>
+  </body>
 </html>

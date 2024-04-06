@@ -1,0 +1,65 @@
+body {
+  background: url('cool-pic.png');
+  background-size: 100% 170vw;
+  background-repeat: no-repeat;
+}
+.form-div {
+  margin: 110px 40px 40px 40px;
+  background: url('hmmm.jpeg');
+  border-radius: 20px;
+  padding: 15px 15px 20px 15px;
+  line-height: 3px;
+  color: white;
+ /* border: 3px solid #ff7b7b; */
+  border: 3px solid lightblue;
+  width: 75%;
+}
+.form-div h3 {
+  font-family: serif;
+  text-align: center; 
+  margin-bottom: 30px;
+}
+.form-div p {
+  font-family: serif;
+  font-size: 14px;
+}
+.form-div input {
+  border-radius: 8px;
+  outline: none;
+  padding: 7.5px;
+  width: 92%;
+  margin-bottom: 10px;
+  box-shadow: none;
+  outline: 1px dotted lightblue;
+}
+.form-div input:hover {
+  border: 1px dotted white;
+  
+}
+.reg-log button {
+  background: black;
+  border: 2px solid lightblue;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 7px;
+  width: 70px;
+}
+.forgot-password {
+  margin-left: 5px;
+  text-decoration: underline;
+  text-decoration-color: #ff7b7b;
+  color: #ff7b7b;
+  margin-top: 20px;
+}
+.no-acct {
+margin-left: 5px;
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+  margin-top: 20px;
+}
+a {
+  text-decoration: none;
+  color: currentcolor;
+  
+}

@@ -1,0 +1,138 @@
+     <div class="v-body">
+     <div class="container">
+     <div class="thecard thecard-1">
+     <div class="frontcard">
+     <div class="v-specs">
+       <div class="name-pic-specs">
+        <div class="name-pic">
+         <h4>Dodge Challenger</h4>
+         <img src="dodge-car.png" class="spec-pic">
+        </div>
+        <div class="specs">
+        <button class="mods-btn" onclick="dodgeMods()">Modifications</button>
+         <h6>Rank 7 out of 365</h6>
+         <div class="mods">
+          <p>This is the specs of your car.</p>
+         </div>
+        </div>
+       </div>
+     <div class="pos-absolute">  
+   <p class="left-nav"><i class="fa fa-arrow-left" onclick="platinumDodge()"></i></p>
+     <p class="right-nav" onclick="chromeDodge()"><i class="fa fa-arrow-right"></i></p>
+       </div>
+      <h4 class="stats-txt">STATS</h4>
+      <div class="statistics">
+      
+       <div class="stats-each">
+        <p>SPEED</p>
+         <div class="stats-bg" id="speed-st"></div>
+         <p>24 / 100</p>
+       </div>
+       
+       <div class="stats-each">
+         <p>ACCELERATION</p>
+          <div class="stats-bg" id="accl-st"></div>
+         <p>12 / 100</p>
+       </div>
+       
+       <div class="stats-each">
+        <p>HANDLING</p>
+         <div class="stats-bg" id="hand-st"></div>
+         <p>08 / 100</p>
+       </div>
+       
+       <div class="stats-each">
+         <p>STEERING</p>
+        <div class="stats-bg" id="steer-st"></div>
+         <p>20 / 100</p>
+       </div>
+       
+       <div class="stats-each">
+         <p>POWER</p>
+        <div class="stats-bg" id="power-st"></div>
+         <p>40 / 100</p>
+       </div>
+       
+       <div class="stats-each">
+         <p>DRIFTING</p>
+        <div class="stats-bg" id="drift-st"></div>
+         <p>10 / 100</p>
+       </div>
+       
+       <div class="stats-each">
+         <p>SHINE</p>
+        <div class="stats-bg" id="sound-st"></div>
+         <p>00 / 100</p>
+       </div>
+       
+    <div class="stats-each">
+        <p>NOISE</p>
+         <div class="stats-bg" id="speed-st"></div>
+         <p>00 / 100</p>
+       </div>
+       
+    <div class="stats-each">
+        <p>BLING</p>
+         <div class="stats-bg" id="speed-st"></div>
+         <p>00 / 100</p>
+       </div>
+       
+    <!--    <div class="stats-each">
+         <p>MASTERY <i class="fa fa-star"></i></p>
+        <div class="star-st">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+       </div> 
+       </div> -->
+       </div>
+       
+    <div class="backcard"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    ////////////////////
+    lllllllllll
+    
+.container {
+  position: relative;
+  color: white;
+}
+.thecard {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.thecard:hover {
+ transform: rotateY(180deg);
+}
+.thecard-1-add {
+  transform: rotateY(180deg);
+}
+.frontcard {
+  position: absolute;
+  backface-visibility: hidden;
+  background: green;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  left: 50%;
+}
+.backcard {
+  position: absolute;
+  background: white;
+  left: 50%;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  transform: rotateY(100deg);
+  backface-visibility: hidden;
+}
