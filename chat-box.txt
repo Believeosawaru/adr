@@ -1,0 +1,2 @@
+ <p class="text-par minus-top"><div class="flexy"><img src="donnie-solano.jpg" class="person-img"><span class="text-span">DONNIE SOLANO</span></div></p>
+   <p class="p-box chat-box jes-talk"><span class="chat">"Welcome, welcome, stranger. Micky here just filled me in. Thank you for going through the trouble of driving here. It's much appreciated! My name is Donnie. Donnie Solano. Please, please, sit. You want a drink? Micky, pour our guest a drink, please. Would you mind running everything by me again?"</span></p>
